@@ -1,0 +1,51 @@
+39
+
+class TTextTheme {
+‘TTextTheme._();
+
+/// Customizable Light Text Thene
+static TextTheme LightTextTheme = TextTheme(
+
+y
+
+headLineLarge: const Textstyle().copywitn(fontsiz
+headLineMedium: const Textstyle().copywith(fontsize
+headLinesmall: const Textstyle().copyitn(fontsize:
+
+32.8, fontWeight: FontWeight.bold, color: Colors.black),
+24.8, fontWeight: FontWeight.w699, color: Colors.black),
+18.0, fonteight: FontWeight.ws09, color: Colors. black),
+
+titleLarge: const Textstyle().copyitith(fontSize: 16.0, fontWeight: FontWeight.6ee, color: Colors.bLack),
+titleMedium: const Textstyte().copyiith(fontsize: 16.9, fontlleight: Fontleight.w500, color: Colors.bLack),
+titlesnatt: const Textstyle().copyiiith(fontSize: 16.0, fontWeight: FontWeight.w4e8, color: Colors.bLack),
+
+bodyLarge: const TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500, color: Colors.black),
+bodyHedium: const Textstyle().copyWith(fontSize: 14.0, fontWeight: Fontleight normal, color: Colors.pLack),
+bodysmalt: const Textstyle().copyilith(fontsize: 14.0, fontWeight: FontWeight.w500, color: Colors. black.withOpacity(9.5)),
+
+‘abelLarge: const TextStyle().copywith(fontsize: 12.0, fontweight: FontMeight.normat, color: Colors.bLack),
+LabelMedium: const Textstyle().copyliith(fontSize: 12.0, fontWeight: FontWeight normal, color: Colors.black.withopacity(9.5)),
+// TextThene
+
+/// Customizable Dark Text Theme
+static TextTheme darkTextTheme = TextTheme(
+
+Fi
+
+headLineLarge: const Textstyle().copyWith(fontSize: 32.0, fontWeight: Fontleight.bold, color: Colors. white),
+headLineNediun: const TextStyle().copyWith(fontSize: 24.8, fontWeight: Fonteight.w699, color: Colors.white),
+headLinesmalt: const Textstyte().copytitn(fontSize: 18.9, fontMeight: FontWeight.u409, color: Colors.wnite),
+
+titleLarge: const Textstyle().copyitith(fontSize: 16.8, fontWeight: FontWeight.w6ee, color: Colors.white),
+titletedium: const Textstyle().copyiith(fontsize: 16.9, fontWeight: FontWeight.w500, color: Colors.white),
+titlesmall: const Textstyte().copyWith(fontsize: 16.0, fontWeight: FontWeight.w400, color: Colors.white),
+
+bodyLarge: const TextStyle().copyWith(fontsize: 14.0, fontWeight: FontWeight.w500, color: Colors.white),
+bodytedium: const Textstyle().copyWith(fontsize: 14.0, fontWeight: FontWeight.normal, color: Colors.white),
+bodySmatl: const TextStyle() .copyith(fontsize: 14.0, fontWeight: FontWeight.w500, color: Colors.white.withOpacity(a.5)),
+
+LabelLarge: const TextStyle().copyWith(fontsize: 12.0, fontWeight: FontWeight.normal, color: CoLors.white),
+‘LabelMedivm: const Textstyle().copyilith(fontsize: 12.8, fontWeight: FontWeight.nornal, color: Colors.white.withOpacity(®.5)),
+// TextThene
+

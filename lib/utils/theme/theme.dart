@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sport_depot/utils/theme/custom_themes/text_theme.dart';
+import 'package:sport_depot/utils/theme/custom_themes/elevated_button_theme.dart';
 
 class SAppTheme {
   SAppTheme._();
@@ -11,6 +12,7 @@ class SAppTheme {
     primaryColor: Colors.orange,
     scaffoldBackgroundColor: Colors.white,
     textTheme: STextTheme.lightTextTheme,
+    elevatedButtonTheme: SElevatedButtonThemeData.lightElevatedButtonTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -19,5 +21,6 @@ class SAppTheme {
     primaryColor: Colors.orange,
     scaffoldBackgroundColor: Colors.black,
     textTheme: STextTheme.darkTextTheme,
+    elevatedButtonTheme: SElevatedButtonThemeData.darkElevatedButtonTheme,
   );
 }
