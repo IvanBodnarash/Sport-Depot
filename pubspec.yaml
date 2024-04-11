@@ -47,6 +47,8 @@ flutter:
     - assets/images/on_boarding_images/sammy-man-and-dog-delivering-packages-on-a-moped.gif
     - assets/images/on_boarding_images/sammy-sailor-looking-through-telescope-off-the-mast.gif
     - assets/images/on_boarding_images/sammy-woman-in-shopping-cart-placing-order-on-smartphone.gif
+    - assets/logos/facebook-logo.png
+    - assets/logos/google-logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

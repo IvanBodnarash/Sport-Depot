@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:sport_depot/features/authentification/controllers.onboarding/onboaring_controller.dart';
 
 import 'package:sport_depot/features/authentification/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:sport_depot/features/authentification/screens/onboarding/widgets/onboarding_next_button.dart';
@@ -12,11 +14,15 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnBoardingController());
+    
     return Scaffold(
       body: Stack(
         children: [
           // Horizontal Scrollable Pages
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: const [
               OnBoardingPage(
                 image: SImages.onBoardingImage1,

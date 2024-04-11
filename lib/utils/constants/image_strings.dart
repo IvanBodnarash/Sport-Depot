@@ -4,8 +4,8 @@ class SImages {
   static const String lightAppLogo = 'assets/logos/sd-store-splash-logo-black.png';
 
   // Social logos
-  // static const String google = 'assets\icons\brands';
-  // static const String facebook = 'assets\icons\brands';
+  static const String google = 'assets/logos/google-logo.png';
+  static const String facebook = 'assets/logos/facebook-logo.png';
 
   // Onboarding images
   static const String onBoardingImage1 = 'assets/images/on_boarding_images/sammy-man-and-dog-delivering-packages-on-a-moped.gif';
