@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "175073769890",
+    "project_id": "sport-depot-app",
+    "storage_bucket": "sport-depot-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175073769890:android:bf7d2c95e85917919e9afb",
+        "android_client_info": {
+          "package_name": "com.example.sport_depot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWdn2c8A4vDWNTV_n6aR21jl_HJBHxIlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

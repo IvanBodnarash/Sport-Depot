@@ -23,6 +23,9 @@ dependencies:
   logger: ^2.2.0
   url_launcher: ^6.2.5
   get_storage: ^2.1.1
+  firebase_core: ^2.27.2
+  flutter_native_splash: ^2.4.0
+  smooth_page_indicator: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -37,9 +40,13 @@ flutter:
   # LOCAL ASSETS
 
   assets:
-    - assets/icons
-    - assets/images/brands
-    - assets/logos
+    # - assets/icons
+    # - assets/images/brands
+    # - assets/logos
+    # - assets/images
+    - assets/images/on_boarding_images/sammy-man-and-dog-delivering-packages-on-a-moped.gif
+    - assets/images/on_boarding_images/sammy-sailor-looking-through-telescope-off-the-mast.gif
+    - assets/images/on_boarding_images/sammy-woman-in-shopping-cart-placing-order-on-smartphone.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
