@@ -32,6 +32,7 @@ class STexts {
   static const String orSignInWith = "or sign in with";
   static const String orSignUpWith = "or sign up with";
   static const String iAgreeTo = "I agree to";
+  static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of use";
   static const String verificationcode = "Verification code";
   static const String resendEmail = "Forget Password";

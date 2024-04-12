@@ -44,6 +44,8 @@ flutter:
     # - assets/images/brands
     # - assets/logos
     # - assets/images
+    - assets/logos/sd-store-splash-logo-black.png
+    - assets/logos/sd-store-splash-logo-white.png
     - assets/images/on_boarding_images/sammy-man-and-dog-delivering-packages-on-a-moped.gif
     - assets/images/on_boarding_images/sammy-sailor-looking-through-telescope-off-the-mast.gif
     - assets/images/on_boarding_images/sammy-woman-in-shopping-cart-placing-order-on-smartphone.gif

@@ -2,24 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:sport_depot/utils/constants/image_strings.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
 import 'package:sport_depot/utils/constants/text_strings.dart';
+import 'package:sport_depot/utils/helpers/helper_functions.dart';
 
 class SLoginHeader extends StatelessWidget {
   const SLoginHeader({
     super.key,
-    required this.dark,
   });
-
-  final bool dark;
 
   @override
   Widget build(BuildContext context) {
+    final dark = SHelperFunctions.isDarkMode(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image(
           height: 150,
-          image: AssetImage(
-              dark ? SImages.lightAppLogo : SImages.darkAppLogo),
+          image: AssetImage(dark ? SImages.darkAppLogo : SImages.lightAppLogo),
         ),
         Text(
           STexts.loginTitle,
