@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:sport_depot/features/authentification/screens/password_configuration/forget_password.dart';
 
 import 'package:sport_depot/features/authentification/screens/signup/signup.dart';
+import 'package:sport_depot/navigation_menu.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
 import 'package:sport_depot/utils/constants/text_strings.dart';
 
@@ -66,7 +67,7 @@ class SLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const NavigationMenu()),
                 child: const Text(STexts.signIn),
               ),
             ),
