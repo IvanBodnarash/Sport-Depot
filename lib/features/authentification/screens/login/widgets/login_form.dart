@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:sport_depot/features/authentification/screens/password_configuration/forget_password.dart';
 
-import 'package:sport_depot/features/authentification/screens/signup.widgets/signup.dart';
+import 'package:sport_depot/features/authentification/screens/signup/signup.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
 import 'package:sport_depot/utils/constants/text_strings.dart';
 
@@ -51,7 +52,7 @@ class SLoginForm extends StatelessWidget {
 
                 // Forgot password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const ForgetPassword()),
                   child: const Text(
                     STexts.forgetPassword,
                     // style: TextStyle(color: Colors.black),

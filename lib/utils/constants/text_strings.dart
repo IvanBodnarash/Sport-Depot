@@ -47,8 +47,13 @@ class STexts {
   static const String changeYourPasswordTitle = "Password Reset Email Sent";
   static const String changeYourPasswordSubTitle = "Your Account Security is Our Priority! We sent a password reset email to your email address. Please check your email and follow the instructions to reset your password.";
   static const String confirmEmail = "Verify your Email Address";
-  static const String confirmEmailSubTitle = "Congratulations! Verify your email address to continue.";
+  static const String confirmEmailSubTitle = "Please verify your email address to continue your account creation process.";
   static const String emailNotRecieved = "Didn't receive the email? Check your spam folder or resend it.";
   static const String yourAccountCreatedTitle = "Your Account Successfully Created";
-  static const String yourAccountCreatedSubTitle = "Welcome to Sport Depot. Your account has been created successfully. Enjoy shopping with us.";
+  static const String yourAccountCreatedSubTitle = "Congratulations! Your account has been successfully created and you can start shopping.";
+
+  // 
+  static const String sContinue = "Continue";
+  static const String submit = "Submit";
+  static const String done = "Done";
 }
