@@ -1,12 +1,12 @@
 name: sport_depot
 description: "A new Flutter project."
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.3.1 <4.0.0'
+  sdk: ">=3.3.1 <4.0.0"
 
 # PACKAGES
 
@@ -16,7 +16,7 @@ dependencies:
 
   cupertino_icons: ^1.0.6
   iconsax: ^0.0.8
-  
+
   get: ^4.6.6
   http: ^1.2.1
   intl: ^0.19.0
@@ -26,6 +26,7 @@ dependencies:
   firebase_core: ^2.27.2
   flutter_native_splash: ^2.4.0
   smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -34,7 +35,6 @@ dev_dependencies:
   flutter_lints: ^3.0.0
 
 flutter:
-
   uses-material-design: true
 
   # LOCAL ASSETS
@@ -44,22 +44,31 @@ flutter:
     # - assets/images/brands
     # - assets/logos
     # - assets/images
+    # Logos
     - assets/logos/sd-store-splash-logo-black.png
     - assets/logos/sd-store-splash-logo-white.png
-    # - assets/images/on_boarding_images/sammy-man-and-dog-delivering-packages-on-a-moped.gif
-    # - assets/images/on_boarding_images/sammy-sailor-looking-through-telescope-off-the-mast.gif
-    # - assets/images/on_boarding_images/sammy-woman-in-shopping-cart-placing-order-on-smartphone.gif
+    - assets/logos/facebook-logo.png
+    - assets/logos/google-logo.png
+    # Onboarding images
     - assets/images/on_boarding_images/taxi-delivery-scooter-with-boxes.gif
     - assets/images/on_boarding_images/taxi-penguins-riding-on-an-ice-floe.gif
     - assets/images/on_boarding_images/taxi-rocket-delivering-parcels-to-aliens-in-space.gif
-    - assets/logos/facebook-logo.png
-    - assets/logos/google-logo.png
+    # Animations
     - assets/images/animations/taxi-data-science-graphs-on-pc-screen.gif
     - assets/images/animations/taxi-cow-being-abducted-by-ufo.gif
     - assets/images/animations/taxi-people-waving-flags-at-ufos.gif
     - assets/images/animations/taxi-4.gif
     - assets/images/animations/taxi-teamwork-in-office.gif
     - assets/images/animations/taxi-woman-joining-puzzle-pieces-together.gif
+    # Categories
+    - assets/icons/categories/casual-t-shirt-.png
+    - assets/icons/categories/sport-shoe.png
+    # Banners
+    - assets/images/banners/nike-banner1.png
+    - assets/images/banners/under-armour-banner.png
+    - assets/images/banners/garmin-banner.jpg
+    # Products
+    - assets/images/products/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
