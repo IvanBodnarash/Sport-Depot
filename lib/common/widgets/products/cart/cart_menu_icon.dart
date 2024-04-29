@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:sport_depot/utils/constants/colors.dart';
+import 'package:sport_depot/utils/helpers/helper_functions.dart';
 
 class SCartCountericon extends StatelessWidget {
   const SCartCountericon({
@@ -14,10 +15,12 @@ class SCartCountericon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = SHelperFunctions.isDarkMode(context);
+    
     return Stack(children: [
       IconButton(
           onPressed: onPressed,
-          icon: Icon(Iconsax.shopping_bag, color: iconColor)),
+          icon: Icon(Iconsax.shopping_bag, color: dark ? SColors.white : iconColor)),
       Positioned(
         right: 0,
         child: Container(

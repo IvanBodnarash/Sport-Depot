@@ -9,7 +9,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.dark,
       theme: SAppTheme.lightTheme,
       darkTheme: SAppTheme.darkTheme,
       home: const OnBoardingScreen(),

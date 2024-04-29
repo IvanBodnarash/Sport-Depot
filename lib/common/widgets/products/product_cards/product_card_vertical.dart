@@ -43,7 +43,7 @@ class SProductCardVertical extends StatelessWidget {
                     imageUrl: SImages.productImage1,
                     applyImageRadius: true,
                   ),
-      
+
                   // Sale Tag
                   Positioned(
                     top: 12,
@@ -61,7 +61,7 @@ class SProductCardVertical extends StatelessWidget {
                               .apply(color: SColors.black)),
                     ),
                   ),
-      
+
                   // Favorite Icon Button
                   const Positioned(
                     top: 0,
@@ -75,17 +75,18 @@ class SProductCardVertical extends StatelessWidget {
               ),
             ),
             const SizedBox(height: SSizes.spaceBtwItems / 2),
-      
+
             // Details
             Padding(
-                padding: const EdgeInsets.only(left: SSizes.sm),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const SProductTitleText(
-                        title: 'Nike T-Shirt LA Lakers', smallSize: true),
-                    const SizedBox(height: SSizes.spaceBtwItems / 2),
-                    Row(children: [
+              padding: const EdgeInsets.only(left: SSizes.sm),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SProductTitleText(
+                      title: 'Nike T-Shirt LA Lakers', smallSize: true),
+                  const SizedBox(height: SSizes.spaceBtwItems / 2),
+                  Row(
+                    children: [
                       Text(
                         'Nike',
                         overflow: TextOverflow.ellipsis,
@@ -98,33 +99,45 @@ class SProductCardVertical extends StatelessWidget {
                         color: SColors.primary,
                         size: SSizes.iconXs,
                       )
-                    ]),
-                    Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          // Price
-                          const SProductPriceText(price: '35.00'),
-                          Container(
-                            decoration: const BoxDecoration(
-                                color: SColors.dark,
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(SSizes.cardRadiusMd),
-                                  bottomRight:
-                                      Radius.circular(SSizes.productImageRadius),
-                                )),
-                            child: const SizedBox(
-                                width: SSizes.iconLg * 1.2,
-                                height: SSizes.iconLg * 1.2,
-                                child: Center(
-                                  child: Icon(
-                                    Iconsax.add,
-                                    color: SColors.white,
-                                  ),
-                                )),
-                          )
-                        ]),
-                  ],
-                )),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+
+            const Spacer(),
+
+            // Price Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // Price
+                const Padding(
+                  padding: EdgeInsets.only(left: SSizes.sm),
+                  child: SProductPriceText(price: '35.00'),
+                ),
+
+                // Add to cart Button
+                Container(
+                  decoration: const BoxDecoration(
+                      color: SColors.dark,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(SSizes.cardRadiusMd),
+                        bottomRight: Radius.circular(SSizes.productImageRadius),
+                      )),
+                  child: const SizedBox(
+                    width: SSizes.iconLg * 1.2,
+                    height: SSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: SColors.white,
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),
