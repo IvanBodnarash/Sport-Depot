@@ -4,7 +4,7 @@ import 'package:sport_depot/common/widgets/custom_shapes/containers/search_conta
 import 'package:sport_depot/common/widgets/layouts/grid_layout.dart';
 import 'package:sport_depot/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:sport_depot/common/widgets/texts/section_heading.dart';
-import 'package:sport_depot/features/shop/screens/home/widgets/homa_categories.dart';
+import 'package:sport_depot/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:sport_depot/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:sport_depot/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:sport_depot/utils/constants/colors.dart';
@@ -46,6 +46,7 @@ class HomeScreen extends StatelessWidget {
 
                         // Categories
                         SHomeCategories(),
+                        SizedBox(height: SSizes.spaceBtwSections),
                       ],
                     ),
                   ),

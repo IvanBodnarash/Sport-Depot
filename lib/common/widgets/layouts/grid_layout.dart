@@ -5,12 +5,12 @@ class SGridLayout extends StatelessWidget {
   const SGridLayout({
     super.key,
     required this.itemCount,
-    this.mainAxisSpacing,
     required this.itemBuilder,
+    this.mainAxisExtent = 288,
   });
 
   final int itemCount;
-  final double? mainAxisSpacing;
+  final double? mainAxisExtent;
   final Widget? Function(BuildContext, int) itemBuilder;
 
   @override
@@ -20,11 +20,11 @@ class SGridLayout extends StatelessWidget {
       shrinkWrap: true,
       padding: EdgeInsets.zero,
       physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
+        mainAxisExtent: mainAxisExtent,
         mainAxisSpacing: SSizes.gridViewSpacing,
         crossAxisSpacing: SSizes.gridViewSpacing,
-        mainAxisExtent: 288,
       ),
       itemBuilder: itemBuilder,
     );

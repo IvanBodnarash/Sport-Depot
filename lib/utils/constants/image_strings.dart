@@ -37,6 +37,9 @@ class SImages {
   static const String promoBanner2 = 'assets/images/banners/under-armour-banner.png';
   static const String promoBanner3 = 'assets/images/banners/garmin-banner.jpg';
 
+  // User
+  static const String user = 'assets/images/user/user.png';
+
   // Products
   static const String productImage1 = 'assets/images/products/t-shirt-los-angeles-lakers-mens.png';
   static const String productImage2 = 'assets/images/products/dumbbells-nzl.png';

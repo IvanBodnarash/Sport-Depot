@@ -57,4 +57,5 @@ class SColors {
   static const Color softGrey = Color(0xFFF4F4F4);
   static const Color lightGrey = Color(0xFF9F9F9F);
   static const Color white = Color.fromARGB(255, 255, 255, 255);
+  static const Color transparent = Colors.transparent;
 }

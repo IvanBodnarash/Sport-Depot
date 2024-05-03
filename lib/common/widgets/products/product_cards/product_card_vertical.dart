@@ -6,6 +6,7 @@ import 'package:sport_depot/common/widgets/icons/s_circular_icon.dart';
 import 'package:sport_depot/common/widgets/images/s_rouned_image.dart';
 import 'package:sport_depot/common/widgets/texts/product_price_text.dart';
 import 'package:sport_depot/common/widgets/texts/product_title_text.dart';
+import 'package:sport_depot/common/widgets/texts/s_brand_titl_with_icon.dart';
 import 'package:sport_depot/utils/constants/colors.dart';
 import 'package:sport_depot/utils/constants/image_strings.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
@@ -23,7 +24,7 @@ class SProductCardVertical extends StatelessWidget {
       onTap: () {},
       child: Container(
         width: 180,
-        padding: const EdgeInsets.all(1),
+        padding: const EdgeInsets.all(2),
         decoration: BoxDecoration(
           boxShadow: [SShadowStyle.verticalProductShadow],
           borderRadius: BorderRadius.circular(SSizes.productImageRadius),
@@ -34,7 +35,7 @@ class SProductCardVertical extends StatelessWidget {
             // Thumbnail, Wishlist Button, Discount Tag
             SRoundedContainer(
               height: 180,
-              padding: const EdgeInsets.all(SSizes.md),
+              padding: const EdgeInsets.all(SSizes.sm),
               backgroundColor: dark ? SColors.dark : SColors.light,
               child: Stack(
                 children: [
@@ -77,30 +78,15 @@ class SProductCardVertical extends StatelessWidget {
             const SizedBox(height: SSizes.spaceBtwItems / 2),
 
             // Details
-            Padding(
-              padding: const EdgeInsets.only(left: SSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: SSizes.xs),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SProductTitleText(
+                  SProductTitleText(
                       title: 'Nike T-Shirt LA Lakers', smallSize: true),
-                  const SizedBox(height: SSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(width: SSizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: SColors.primary,
-                        size: SSizes.iconXs,
-                      )
-                    ],
-                  ),
+                  SizedBox(height: SSizes.spaceBtwItems / 2),
+                  SBrandTitleWithIcon(title: 'Nike'),
                 ],
               ),
             ),
@@ -113,7 +99,7 @@ class SProductCardVertical extends StatelessWidget {
               children: [
                 // Price
                 const Padding(
-                  padding: EdgeInsets.only(left: SSizes.sm),
+                  padding: EdgeInsets.only(left: SSizes.md),
                   child: SProductPriceText(price: '35.00'),
                 ),
 
