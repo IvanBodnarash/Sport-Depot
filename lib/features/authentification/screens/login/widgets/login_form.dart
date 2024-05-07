@@ -5,6 +5,7 @@ import 'package:sport_depot/features/authentification/screens/password_configura
 
 import 'package:sport_depot/features/authentification/screens/signup/signup.dart';
 import 'package:sport_depot/navigation_menu.dart';
+import 'package:sport_depot/utils/constants/colors.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
 import 'package:sport_depot/utils/constants/text_strings.dart';
 
@@ -56,7 +57,7 @@ class SLoginForm extends StatelessWidget {
                   onPressed: () => Get.to(() => const ForgetPassword()),
                   child: const Text(
                     STexts.forgetPassword,
-                    // style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Color.fromARGB(255, 51, 51, 51)),
                   ),
                 ),
               ],

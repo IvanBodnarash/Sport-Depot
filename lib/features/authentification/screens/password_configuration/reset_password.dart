@@ -48,7 +48,8 @@ class ResetPassword extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
-                    onPressed: () {}, child: const Text(STexts.resendEmail)),
+                    onPressed: () {}, child: const Text(STexts.resendEmail,
+                    style: TextStyle(color: Color.fromARGB(255, 51, 51, 51)))),
               ),
             ]
           ),
