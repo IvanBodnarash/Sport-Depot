@@ -5,7 +5,6 @@ import 'package:sport_depot/features/authentification/screens/password_configura
 
 import 'package:sport_depot/features/authentification/screens/signup/signup.dart';
 import 'package:sport_depot/navigation_menu.dart';
-import 'package:sport_depot/utils/constants/colors.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
 import 'package:sport_depot/utils/constants/text_strings.dart';
 

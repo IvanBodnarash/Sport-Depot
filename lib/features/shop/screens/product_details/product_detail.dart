@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:readmore/readmore.dart';
+import 'package:sport_depot/common/widgets/texts/section_heading.dart';
+import 'package:sport_depot/features/shop/screens/product_details/widgets/bottom_add_to_cart_widget.dart';
 import 'package:sport_depot/features/shop/screens/product_details/widgets/product_attributes.dart';
 import 'package:sport_depot/features/shop/screens/product_details/widgets/product_detail_image.dart';
 import 'package:sport_depot/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:sport_depot/features/shop/screens/product_details/widgets/rating_share_widget.dart';
+import 'package:sport_depot/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
 
 class ProductDetail extends StatelessWidget {
@@ -10,32 +16,60 @@ class ProductDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+      bottomNavigationBar: const SBottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
             // Product Image Slider
-            SProductImageSlider(),
+            const SProductImageSlider(),
 
             // Product Details
             Padding(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                   right: SSizes.defaultSpace,
                   left: SSizes.defaultSpace,
                   bottom: SSizes.defaultSpace),
               child: Column(
                 children: [
                   // Rating & Share Button
-                  SRatingAndShare(),
+                  const SRatingAndShare(),
 
                   // Price, Title, Stock, Brand
-                  SProductMetaData(),
+                  const SProductMetaData(),
                   
                   // Attributes
-                  SProductAttributes(),
+                  const SProductAttributes(),
+                  const SizedBox(height: SSizes.spaceBtwSections),
+                  
                   // Checkout Button
+                  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () {}, child: const Text('Checkout'))),
+                  const SizedBox(height: SSizes.spaceBtwSections),
+
                   // Description
+                  const SSectionHeading(title: 'Description', showActionButton: false),
+                  const SizedBox(height: SSizes.spaceBtwItems),
+                  const ReadMoreText(
+                    'This is a Product description for Nike t-shirt Los Angeles Lakers. There are more things to say about this product.',
+                    trimLines: 2,
+                    trimMode: TrimMode.Line,
+                    trimCollapsedText: ' Read more',
+                    trimExpandedText: ' Less',
+                    moreStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+                    lessStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+                  ),
+
                   // Reviews
+                  const Divider(),
+                  const SizedBox(height: SSizes.spaceBtwItems),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const SSectionHeading(title: 'Reviews (255)', showActionButton: false),
+                      IconButton(onPressed: () => Get.to(() => const SProductReviews()), icon: const Icon(Iconsax.arrow_right_3, size: 18)),
+                    ],
+                  ),
+                  const SizedBox(height: SSizes.spaceBtwSections),
                 ]
               ),
             ),
