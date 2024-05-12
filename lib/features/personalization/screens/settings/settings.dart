@@ -6,6 +6,7 @@ import 'package:sport_depot/common/widgets/custom_shapes/containers/primary_head
 import 'package:sport_depot/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:sport_depot/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:sport_depot/common/widgets/texts/section_heading.dart';
+import 'package:sport_depot/features/personalization/screens/address/address.dart';
 import 'package:sport_depot/features/personalization/screens/profile/profile.dart';
 import 'package:sport_depot/utils/constants/colors.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
@@ -51,10 +52,11 @@ class SettingsScreen extends StatelessWidget {
                       title: 'Account Settings', showActionButton: false),
                   const SizedBox(height: SSizes.spaceBtwItems),
 
-                  const SSettingsMenuTile(
+                  SSettingsMenuTile(
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
                     subTitle: 'Set shopping delivery address',
+                    onTap: () => Get.to(() => const UserAddressScreen()),
                   ),
                   const SSettingsMenuTile(
                     icon: Iconsax.shopping_cart,

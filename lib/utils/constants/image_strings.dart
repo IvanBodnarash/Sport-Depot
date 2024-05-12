@@ -45,4 +45,9 @@ class SImages {
   static const String productImage2 = 'assets/images/products/dumbbells-nzl.png';
   static const String productImage3 = 'assets/images/products/nike-revolution-5.png';
   static const String productImage4 = 'assets/images/products/garmin-forerunner.png';
+
+  // Reviews profiles images
+  static const String userProfileImage1 = 'assets/images/user/user_profile_icon1.jpg';
+  static const String userProfileImage2 = 'assets/images/user/user_profile_icon2.png';
+  static const String userProfileImage3 = 'assets/images/user/user_profile_icon3.jpg';
 }

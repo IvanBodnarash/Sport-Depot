@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:sport_depot/common/widgets/appbar/appbar.dart';
 import 'package:sport_depot/common/widgets/products/ratings/rating_indicator.dart';
 import 'package:sport_depot/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
-import 'package:sport_depot/utils/constants/colors.dart';
+import 'package:sport_depot/features/shop/screens/product_reviews/widgets/user_review_card.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
 
 class SProductReviews extends StatelessWidget {
@@ -37,6 +35,10 @@ class SProductReviews extends StatelessWidget {
               const SizedBox(height: SSizes.spaceBtwSections),
 
               // User Reviews List
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
             ],
           ),
         ),
