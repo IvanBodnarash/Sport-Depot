@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sport_depot/common/widgets/appbar/appbar.dart';
 import 'package:sport_depot/common/widgets/appbar/tabbar.dart';
 import 'package:sport_depot/common/widgets/custom_shapes/containers/search_container.dart';
@@ -6,6 +7,7 @@ import 'package:sport_depot/common/widgets/layouts/grid_layout.dart';
 import 'package:sport_depot/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:sport_depot/common/widgets/texts/section_heading.dart';
 import 'package:sport_depot/common/widgets/brands/brand_card.dart';
+import 'package:sport_depot/features/shop/screens/brand/all_brands.dart';
 import 'package:sport_depot/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:sport_depot/utils/constants/colors.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
@@ -55,7 +57,7 @@ class StoreScreen extends StatelessWidget {
 
                       // Featured brands
                       SSectionHeading(
-                          title: 'Featured brands', onPressed: () {}),
+                          title: 'Featured brands', onPressed: () => Get.to(() => const AllBrandsScreen())),
                       const SizedBox(height: SSizes.spaceBtwItems / 1.5),
 
                       // Brands Grid
