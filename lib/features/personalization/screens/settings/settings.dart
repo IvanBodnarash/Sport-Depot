@@ -8,6 +8,7 @@ import 'package:sport_depot/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:sport_depot/common/widgets/texts/section_heading.dart';
 import 'package:sport_depot/features/personalization/screens/address/address.dart';
 import 'package:sport_depot/features/personalization/screens/profile/profile.dart';
+import 'package:sport_depot/features/shop/screens/order/order.dart';
 import 'package:sport_depot/utils/constants/colors.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
 
@@ -63,10 +64,11 @@ class SettingsScreen extends StatelessWidget {
                     title: 'My Cart',
                     subTitle: 'Add, remove products and move to checkout',
                   ),
-                  const SSettingsMenuTile(
+                  SSettingsMenuTile(
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subTitle: 'In-progress, completed and cancelled orders',
+                    onTap: () => Get.to(() => const OrderScreen()),
                   ),
                   const SSettingsMenuTile(
                     icon: Iconsax.bank,
