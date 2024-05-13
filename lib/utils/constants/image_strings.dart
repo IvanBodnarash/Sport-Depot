@@ -50,4 +50,11 @@ class SImages {
   static const String userProfileImage1 = 'assets/images/user/user_profile_icon1.jpg';
   static const String userProfileImage2 = 'assets/images/user/user_profile_icon2.png';
   static const String userProfileImage3 = 'assets/images/user/user_profile_icon3.jpg';
+
+  // Payment Methods
+  static const String applePay = 'assets/icons/payment_methods/apple_pay.png';
+  static const String googlePay = 'assets/icons/payment_methods/google_pay.png';
+  static const String mastercard = 'assets/icons/payment_methods/mastercard.png';
+  static const String visa = 'assets/icons/payment_methods/visa.png';
+  static const String successfulPayment = 'assets/icons/payment_methods/successful-icon.png';
 }

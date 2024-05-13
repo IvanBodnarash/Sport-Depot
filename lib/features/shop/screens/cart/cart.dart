@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sport_depot/common/widgets/appbar/appbar.dart';
-import 'package:sport_depot/common/widgets/products/cart/add_remove_button.dart';
-import 'package:sport_depot/common/widgets/products/cart/cart_item.dart';
-import 'package:sport_depot/common/widgets/texts/product_price_text.dart';
+import 'package:sport_depot/features/shop/screens/cart/widgets/cart_items.dart';
+import 'package:sport_depot/features/shop/screens/checkout/checkout.dart';
 import 'package:sport_depot/utils/constants/sizes.dart';
 
 class CartScreen extends StatelessWidget {
@@ -15,42 +15,18 @@ class CartScreen extends StatelessWidget {
         showBackArrow: true,
         title: Text('Cart', style: Theme.of(context).textTheme.headlineSmall),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(SSizes.defaultSpace),
-        child: ListView.separated(
-          shrinkWrap: true,
-          itemCount: 10,
-          separatorBuilder: (_, __) =>
-              const SizedBox(height: SSizes.spaceBtwSections),
-          itemBuilder: (_, index) => const Column(
-            children: [
-              SCartItem(),
-              SizedBox(height: SSizes.spaceBtwItems),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      // Extra Space
-                      SizedBox(width: 70),
+      body: const Padding(
+        padding: EdgeInsets.all(SSizes.defaultSpace),
 
-                      // Add Remove Buttons
-                      SProductCartAttr(),
-                    ],
-                  ),
-
-                  // Product total price
-                  SProductPriceText(price: '25'),
-                ],
-              ),
-            ],
-          ),
-        ),
+        // Cart Items
+        child: SCartItems(),
       ),
+
+      // Checkout Button
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(SSizes.defaultSpace),
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () => Get.to(() => const CheckoutScreen()),
           child:
               const Text('Checkout \$25'),
         ),
