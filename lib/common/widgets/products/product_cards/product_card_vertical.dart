@@ -123,7 +123,7 @@ class SProductCardVertical extends StatelessWidget {
                       ),
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ],
