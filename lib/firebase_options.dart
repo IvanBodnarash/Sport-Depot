@@ -27,10 +27,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -44,29 +41,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDSIYvDqQ69v0sgZombaDuKnI7_DBCM49c',
-    appId: '1:175073769890:web:052a115d7e4518839e9afb',
-    messagingSenderId: '175073769890',
-    projectId: 'sport-depot-app',
-    authDomain: 'sport-depot-app.firebaseapp.com',
-    storageBucket: 'sport-depot-app.appspot.com',
-    measurementId: 'G-7Q9FVYY6XH',
+    apiKey: 'AIzaSyAxRQExUam9QybYzVGgFB60Dj13uSwzLkE',
+    appId: '1:691428856787:web:39a46a333353c8836d1526',
+    messagingSenderId: '691428856787',
+    projectId: 'sportdepotstore',
+    authDomain: 'sportdepotstore.firebaseapp.com',
+    storageBucket: 'sportdepotstore.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDWdn2c8A4vDWNTV_n6aR21jl_HJBHxIlw',
-    appId: '1:175073769890:android:bf7d2c95e85917919e9afb',
-    messagingSenderId: '175073769890',
-    projectId: 'sport-depot-app',
-    storageBucket: 'sport-depot-app.appspot.com',
+    apiKey: 'AIzaSyBPebsH9T9qjVIIMTbdGys_qycxfAI4Q4g',
+    appId: '1:691428856787:android:18eea6c7bf7a23fe6d1526',
+    messagingSenderId: '691428856787',
+    projectId: 'sportdepotstore',
+    storageBucket: 'sportdepotstore.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAjyjRJ8uLj7ylY902FIoLlBuM0rMw5WS4',
-    appId: '1:175073769890:ios:a1475e005c9fe3649e9afb',
-    messagingSenderId: '175073769890',
-    projectId: 'sport-depot-app',
-    storageBucket: 'sport-depot-app.appspot.com',
+    apiKey: 'AIzaSyBS0Ys6Bxccjr2fDena0rs5sEEbaaCMza4',
+    appId: '1:691428856787:ios:c0adc417cb99e8b76d1526',
+    messagingSenderId: '691428856787',
+    projectId: 'sportdepotstore',
+    storageBucket: 'sportdepotstore.appspot.com',
+    androidClientId: '691428856787-s5gpdhssejo2hrjl41m9d8tmug4ivave.apps.googleusercontent.com',
+    iosClientId: '691428856787-avberlugch5fcil15npueq6cophal6jt.apps.googleusercontent.com',
     iosBundleId: 'com.example.sportDepot',
   );
 
@@ -78,4 +76,14 @@ class DefaultFirebaseOptions {
     storageBucket: 'sport-depot-app.appspot.com',
     iosBundleId: 'com.example.sportDepot.RunnerTests',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyAxRQExUam9QybYzVGgFB60Dj13uSwzLkE',
+    appId: '1:691428856787:web:a6b3cc1a4292942e6d1526',
+    messagingSenderId: '691428856787',
+    projectId: 'sportdepotstore',
+    authDomain: 'sportdepotstore.firebaseapp.com',
+    storageBucket: 'sportdepotstore.appspot.com',
+  );
+
 }

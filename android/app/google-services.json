@@ -1,26 +1,51 @@
 {
   "project_info": {
-    "project_number": "175073769890",
-    "project_id": "sport-depot-app",
-    "storage_bucket": "sport-depot-app.appspot.com"
+    "project_number": "691428856787",
+    "project_id": "sportdepotstore",
+    "storage_bucket": "sportdepotstore.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:175073769890:android:bf7d2c95e85917919e9afb",
+        "mobilesdk_app_id": "1:691428856787:android:18eea6c7bf7a23fe6d1526",
         "android_client_info": {
           "package_name": "com.example.sport_depot"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "691428856787-s5gpdhssejo2hrjl41m9d8tmug4ivave.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sport_depot",
+            "certificate_hash": "f16da8a4ad93e20002d277a05e67a4460dff9c59"
+          }
+        },
+        {
+          "client_id": "691428856787-9s5mhetjr997rv8d591b64q2hscokgnq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDWdn2c8A4vDWNTV_n6aR21jl_HJBHxIlw"
+          "current_key": "AIzaSyBPebsH9T9qjVIIMTbdGys_qycxfAI4Q4g"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691428856787-9s5mhetjr997rv8d591b64q2hscokgnq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "691428856787-avberlugch5fcil15npueq6cophal6jt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sportDepot"
+              }
+            }
+          ]
         }
       }
     }
