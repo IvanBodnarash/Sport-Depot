@@ -11,6 +11,9 @@ class SignupController extends GetxController {
 
     } catch (e) {
       // Show some error
+      
+    } finally {
+      
     }
   }
 }
