@@ -9,24 +9,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:flutter/foundation.dart';
 
-// Future<void> main() async {
-//   // Widgets binding
-//   final WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-
-//   // GetX Local Storage
-//   await GetStorage.init();
-
-//   // Await Native Splash
-//   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-
-//   // Initialize Firebase & Auth Repository
-//   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
-//       .then(
-//     (FirebaseApp value) => Get.put(AuthenticationRepository()),
-//   );
-
-//   runApp(const App());
-// }
 Future<void> main() async {
   // Widgets binding
   final WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
